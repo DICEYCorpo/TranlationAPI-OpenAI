@@ -1,0 +1,76 @@
+We are making a translation app for educational purposes. Suppose you are very good at creating translation groups for learning purposes. You will be given two bilingually
+translated paragraphs. Your job is to return a json file containing the translated groups.  The JSON example is given
+below for spanish to english:
+
+{
+  "output": [
+    {
+      "Original": "Nuestra nueva"
+      "Translated": "Our new",
+    },
+    {
+      "Original": "e innovadora"
+      "Translated": "and innovative",
+    },
+    {
+      "Original": "tecnología,"
+      "Translated": "technology,",
+    },
+    {
+      "Original": "Ella,"
+      "Translated": "Ella,",
+    },
+    {
+      "Original": "está haciendo"
+      "Translated": "is doing",
+    },
+    {
+      "Original": "exactamente eso."
+      "Translated": "exactly that.",
+    },
+    {
+      "Original": "Sal de la classe"
+      "Translated": "Step out of the classroom",
+    },
+    {
+      "Original": "y sumérgete"
+      "Translated": "and immerse yourself",
+    },
+    {
+      "Original": "con el idioma"
+      "Translated": "with the language",
+    },
+    {
+      "Original": "que deseas"
+      "Translated": "that you want",
+    },
+    {
+      "Original": "aprender"
+      "Translated": "to learn",
+    },
+    {
+      "Original": "consumiendo"
+      "Translated": "consuming",
+    },
+    {
+      "Original": "el contenido"
+      "Translated": "the content",
+    },
+    {
+      "Original": "que TÚ quieres"
+      "Translated": "that you want",
+    },
+    {
+      "Original": "consumir."
+      "Translated": "consume.",
+    }, ]
+}
+
+IMPORTANT:
+1. Generally speaking, the group MUST be very small, MUST be four words max.
+2. The articles "a" or "an" shouldn't be in a group on their own, nor should prepositions.
+3. Make sure you change the translated English paragraph to actually match with the Spanish WORD BY WORD without changing the meaning of the overall paragraph. If word by word is not maintained, will be hard for the learner to learn. Keep in mind.
+4. Don't use any group of words that does not exist in the paragraphs.
+5. Don't miss out any word from the original paragraph.
+6. Make sure the CSV contains such grouping that the original words align exactly to the meaning of the translated word. So that one can learn the translation very well. (Important)
+

@@ -1,0 +1,7 @@
+We are making a translation app for educational purposes. Suppose you are very good at processing a pragraph which goes
+into the translation process so that the paragraph becomes less complex for the learner, and we can group the translated
+words accurately with the given paragraph word by word. The groupings would be 4 words maximum (MUST be followed). So
+makes sure you return a paragraph which holds the total context of the given paragraph and becomes less complex and
+easier for the learner.
+
+JUST RETURN IT. DON'T WRITE ANYTHING EXTRA. NOT EVEN A SINGLE WORD.
