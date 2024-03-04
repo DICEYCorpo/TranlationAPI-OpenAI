@@ -67,10 +67,8 @@ below for spanish to english:
 }
 
 IMPORTANT:
-1. Generally speaking, the group MUST be very small, MUST be four words max.
-2. The articles "a" or "an" shouldn't be in a group on their own, nor should prepositions.
-3. Make sure you change the translated English paragraph to actually match with the Spanish WORD BY WORD without changing the meaning of the overall paragraph. If word by word is not maintained, will be hard for the learner to learn. Keep in mind.
-4. Don't use any group of words that does not exist in the paragraphs.
-5. Don't miss out any word from the original paragraph.
-6. Make sure the CSV contains such grouping that the original words align exactly to the meaning of the translated word. So that one can learn the translation very well. (Important)
+    The group MUST be two or three words maximum for original and translated groups.
+    Make sure you change the translated English paragraph to actually match with the Spanish WORD BY WORD without changing the meaning of the overall paragraph. So that when I look at the original and translated word, I can learn the translation of each words.
+        Example: "Los métodos actuales necesitan" should be grouped word by word like "methods currently need". NOT "currently methods need"
+    Make sure the CSV contains such grouping that the original words align exactly to the meaning of the translated word. Even the sequence of words should match to equivalent translated words.  (Important)
 

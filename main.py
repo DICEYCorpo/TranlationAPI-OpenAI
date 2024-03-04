@@ -4,8 +4,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 
-textInp1 = input("Please enter the text you want to translate: ")
-
+textInp1 = "Our new application is going to revolutionize language learning. All existing language learning methods require the student to allocate time out of their busy day to dedicate to being engaged with content that they don't care about. Our pioneer approach would allow the student to learn the language using the content they are already excited about consuming."
+print("original paragraph: " + textInp1)
 
 
 client = OpenAI(
@@ -35,7 +35,7 @@ response = client.chat.completions.create(
   presence_penalty=0
 )
 textInp1 = response.choices[0].message.content
-
+print("Processed Paragraph: " + textInp1)
 translatedInp1 = (GoogleTranslator(source='auto', target='es').translate(textInp1))
 with open("systemPrompt.txt", "r") as f:
     systemPrompt = f.read()
