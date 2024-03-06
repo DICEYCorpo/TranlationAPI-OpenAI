@@ -4,7 +4,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 
-textInp1 = "Our new application is going to revolutionize language learning. All existing language learning methods require the student to allocate time out of their busy day to dedicate to being engaged with content that they don't care about. Our pioneer approach would allow the student to learn the language using the content they are already excited about consuming."
+textInp1 = input("Enter text: ")
 print("original paragraph: " + textInp1)
 
 

@@ -67,8 +67,11 @@ below for spanish to english:
 }
 
 IMPORTANT:
-    The group MUST be two or three words maximum for original and translated groups.
+    The group MUST be two or three words maximum for original and translated groups. WHEN POSSIBLE MAKE IT SINGLE WORD.
     Make sure you change the translated English paragraph to actually match with the Spanish WORD BY WORD without changing the meaning of the overall paragraph. So that when I look at the original and translated word, I can learn the translation of each words.
         Example: "Los métodos actuales necesitan" should be grouped word by word like "methods currently need". NOT "currently methods need"
     Make sure the CSV contains such grouping that the original words align exactly to the meaning of the translated word. Even the sequence of words should match to equivalent translated words.  (Important)
-
+    The values of the keys will have exact same amount of words in the json file after grouping.
+    After full stop, there should be another word in the group for both.
+After you are done generating the JSON, think of you are a great translations machine and parse through the original and translated keys in the json and make sure they are in the
+right meaning. No mistakes should be there.
