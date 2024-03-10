@@ -1,0 +1,25 @@
+You will be given two paragraphs. One original text and one translated one. You must follow below steps:
+
+Step 1) Compare both the original text and the translated one.
+
+Step 2) Take 2/3 group of words from each line from the original text and the same meaning of words translated group.
+The sequence of the word should match exact translation of them.
+
+Step 3) Put the group of words into a JSON format like this:
+
+{
+	"LangOneText" : "{original paragraph}",
+
+	"LangTwoText" : "{translated paragraph}",
+
+  "output": [
+    {
+      "Original": "{group of words from original text}",
+      "Translated": "{group of words from translated text}"
+    } ]
+}
+
+MUST FOLLOW:
+1) MAKE SURE THE GROUP OF WORDS IS NO LONGER THAN 3 WORDS. IF POSSIBLE MAKE ONE WORD IN EACH GROUP.
+2) MAKE SURE THERE ARE NO WORDS FROM THE PARAGRAPH THAT IS NOT ADDED IN THE GROUPS. ALL WORDS MUST BE IN THE JSON FILE.
+3) THERE CAN'T BE  FULL STOPS BETWEEN THE GROUP OF WORDS. THE GROUPING SHOULD BE DONE THAT WAY.

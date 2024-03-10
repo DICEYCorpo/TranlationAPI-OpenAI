@@ -16,7 +16,7 @@ with open("systemPromptParagraph.txt", "r") as f:
   systemPromptParagraph = f.read()
 
 response = client.chat.completions.create(
-  model="gpt-3.5-turbo",
+  model="gpt-3.5-turbo-16k",
   messages=[
     {
       "role": "system",
@@ -36,12 +36,13 @@ response = client.chat.completions.create(
 )
 textInp1 = response.choices[0].message.content
 print("Processed Paragraph: " + textInp1)
-translatedInp1 = (GoogleTranslator(source='auto', target='es').translate(textInp1))
-with open("systemPrompt.txt", "r") as f:
+translatedInp1 = (GoogleTranslator(source='auto', target='fr').translate(textInp1))
+print("Translated Paragraph: " + translatedInp1)
+with open("experiment.txt", "r") as f:
     systemPrompt = f.read()
 
 response = client.chat.completions.create(
-  model="gpt-3.5-turbo",
+  model="gpt-3.5-turbo-16k",
   messages=[
     {
       "role": "system",
@@ -49,7 +50,7 @@ response = client.chat.completions.create(
     },
     {
       "role": "user",
-      "content": "Spanish:\n\n\"" + translatedInp1 + "\"\n\nEnglish:\n\n\"" + textInp1 + "\"\n\n"
+      "content": "Original:\n\n\"" + textInp1 + "\"\n\nTranslated:\n\n\"" + translatedInp1 + "\"\n\n"
     }
 
   ],
